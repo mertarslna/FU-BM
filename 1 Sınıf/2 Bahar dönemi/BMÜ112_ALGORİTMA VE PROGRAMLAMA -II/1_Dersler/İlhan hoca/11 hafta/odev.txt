@@ -1,0 +1,25 @@
+5 takımlı bir futbol grubunda takımların birbirleri ile yapmış olduğu maç sonuçlarına göre puan durumu oluşturulacaktır. Bu amaçla bir “turnuva.txt” dosyasında haftalık maç bilgileri aşağıdaki gibi tutulacaktır.
+
+Haftano takım1 takım2 skor1-skor2
+
+1          Fenerbahçe       Galatasaray      2-1
+
+1          Başakşehir       Antalyaspor     3-0
+
+Buna göre aşağıdaki sınıflar ve metotları kullanarak adı girilen bir takımın bilgilerini hesaplayan bir Java programı geliştiriniz.     
+
+Bir takımın oynadığı maçların skorlarına ilişkin aşağıda tanıtılan Mac, Kazanma, Berabere, Kaybedilen sınıflarını ve getTakiminfo() metodunu Java dilinde tanımlanacaktır. Bir maçı temsilen, skorunun galibiyet, beraberlik yada mağlubiyet olması durumuna göre sırasıyla
+
+Kazanma, Berabere veya Kaybedilen sınıfından bir nesne kullanılır. Örneğin, toplam 5 maç oynayan bir takım 1-0, 2-1, 1-1, 2-2 ve 0-3 skorlarını almış ise aşağıdaki Java nesne dizisi oluşturulur.
+
+Mac m[] = {new Kazanma(1,0), new Kazanma(2,1), new Berabere(1,1),
+
+new Berabere(2,2), new Kaybedilen(0,3)};
+
+getTakimInfo() metodu ise ilgili takımın turnuva tablosu bilgilerini (sırasıyla, maçların sayısı, galibiyet sayısı, beraberlik sayısı, mağlubiyet sayısı, attığı toplam gol, yediği toplam gol, kazanılan toplam puan) bir dizi biçiminde bu nesne dizisinden türetmek için kullanılır.
+
+public int[] getTakimInfo(Mac m[]);
+
+Yukarıda tanımlanan m nesne dizisi için getTakimInfo() metodu {5, 2, 2, 1, 6, 7, 8} dizisini üretecektir.
+
+NOT: Kodlamalarınız için sonuçların gösteriminde GUI/Konsol kullanabilirsiniz. GUI kullanan ve haftalara göre puan durumunu hesaplatıp/gösteren bir ara yüz hazırlayan öğrencilere ek puan verilecektir.Kopya Ödevler SIFIR olarak değerlendirilecektir. 
