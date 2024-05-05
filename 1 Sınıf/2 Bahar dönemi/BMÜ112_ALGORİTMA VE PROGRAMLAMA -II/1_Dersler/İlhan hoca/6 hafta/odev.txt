@@ -1,7 +1,0 @@
-ÖDEV: Aşağıdaki sınıfları oluşturunuz? alanHesapla() ve cevreHEsapla() metotları sekil sınıfında boş bir metot olup çember sınıfı ve dikdörtgen sınıfı bu iki metodu override etmelidir. Ayrıca çember sınıfı ve dikdörtgen sınıfında toString() metodu ile çember ve dikdörtgene ait bilgiler geri döndürülmelidir. Örneğin konum:10,10 yaricap:2 alan:1.256 cevre:1.256 şeklinde bir String döndürülmelidir.    
-
-
-
-Test sınıfını oluşturarak her bir çember ve dikdörtgen için nesne örnekleri oluşturunuz. Test sınıfında static void yazdir(sekil []s) {}  metodunu oluşturunuz. Bu metot kendisine gelen şekillerin bilgilerini ekrana basar. Main metodunda diziyi 3 çember 3 dikdortgen içerecek şekilde oluşturup metoda gönderiniz. Metot çember ve dizilerin toString metodundaki bilgileri ekrana basmalıdır.
-
-NOT: iki dosya gönderilmelidir. İlki pdf olarak kodlarınızı ve çalıştırma sonuçlarınızı göstermelidir. İkinci dosya ise .rar uzantılı proje dosyalarınızı içermelidir. 

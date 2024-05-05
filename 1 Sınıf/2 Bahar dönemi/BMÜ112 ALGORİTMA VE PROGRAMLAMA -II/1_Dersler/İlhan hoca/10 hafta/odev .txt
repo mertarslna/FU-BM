@@ -1,0 +1,3 @@
+Üzerinde 5 tane buton bulunan ve aşağıda açıklandığı gibi çalışan bir form (JFrame) uygulaması (asalButtons) geliştiriniz. (a) Butonlar başlangıçta ilk 5 asal sayıyı gösterir. Bu asal sayılar sürekli 1 saniye aralıklar ile aşağıdaki gibi üretilmektedir.  (b) Yeni bir buton tıklaması asal sayı hareketini durdurur. (c) Bu şekilde birbirini izleyen iki buton tıklamasından birincisi sayı hareketini durdururken, diğeri hareketi devam ettirir.
+
+Ödev ile ilgili  detay dosya olarak atılmıştır. Ödevlerin proje dosyası .zip veya .rar uzantılı olarak arşivlenip gönderilmelidir.  Ödev açıklaması ile ilgili dosya 10. hafta Threads bölümündedir. 
