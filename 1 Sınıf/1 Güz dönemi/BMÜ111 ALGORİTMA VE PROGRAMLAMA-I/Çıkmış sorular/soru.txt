@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package test;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Dell
+ */
+public class Test {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      String s="aaaaaaa";
+           String   str;
+      int z;
+      int top=0;
+      int i=0;
+      while(i<(s.length()-3)){
+          str=s.substring(i,i+3);
+          System.out.println(str);
+          z=str.compareTo("aaa");
+          if(z==0){
+          top=top+1;
+          i=i+3;
+          } else {
+          i++;    
+          }
+          
+      }
+      
+      System.out.println(top);
+    }
+    
+}
