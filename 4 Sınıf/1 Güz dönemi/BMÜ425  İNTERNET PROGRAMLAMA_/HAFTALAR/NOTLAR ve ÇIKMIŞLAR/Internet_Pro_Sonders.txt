@@ -1,0 +1,87 @@
+-- onmouseover ile üzerine gelindiğinde kaçan top
+<html>
+<head><title>Top yapma</title></head>
+<body>
+<div  onmouseover="islem()" id="top" style=" position : absolute; top: 0; left:0;height: 100px; width :100px; border-radius: 100px; background-color:red ;"></div>
+<script>
+   
+   
+
+function islem(){
+    var deneme=parseInt(document.getElementById("top").style.top)
+    
+        
+        if(parseInt(document.getElementById("top").style.top)>=500 || parseInt(document.getElementById("top").style.left)>=500){
+        
+        document.getElementById("top").style.top=parseInt(0);
+        clearInterval(topInterval)
+    }
+    else{
+       var leftn=parseInt(Math.random()*500);
+       var top=parseInt(Math.random()*500);
+        document.getElementById("top").style.top=top;
+         document.getElementById("top").style.left=leftn;
+
+
+    }
+  
+}
+</script>
+
+----satır ve sütün sayısı html sayfasından gelen tablo oluşturma
+---- html kısmı
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <form action="tablo.jsp" method="post">
+        <input type="number" name="sutun">
+            <input type="number" name="satir">
+                <input type="submit">
+    </form>
+</body>
+</html>
+----jsp kısmı
+<%-- 
+    Document   : tablo
+    Created on : 1 Oca 2023, 16:51:45
+    Author     : merve
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    int satir=Integer.parseInt(request.getParameter("satir"));
+    int sutun=Integer.parseInt(request.getParameter("sutun"));
+%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JSP Page</title>
+</head>
+<body>
+<div></div>
+    <table style="color:red">
+        <% 
+            for(int i=0;i<satir;i++){
+            %>
+            <tr>
+        <%
+            for(int j=0;j<sutun;j++){
+            %>
+            <td><% out.print(j); %></td>
+        <%
+            }%></tr><%
+            }
+        %>
+    </table>  
+</body>
+</html>
