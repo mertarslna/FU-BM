@@ -1,0 +1,7 @@
+1) Derleyici Tasarım - Lexical Analiz
+
+https://www.youtube.com/watch?v=S3cAIypadUE
+
+2) Derleyici Tasarım - LR Parsing
+
+https://www.youtube.com/watch?v=NwIXr-oBCNA&list=PL04gL0G0pzmKgw3qNqIvcblm5TpqNVj7X&index=3
